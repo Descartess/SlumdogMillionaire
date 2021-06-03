@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13F239492668BE7100EA427D /* SlumDogMillionaireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F239482668BE7100EA427D /* SlumDogMillionaireApp.swift */; };
+		13F2394B2668BE7100EA427D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2394A2668BE7100EA427D /* ContentView.swift */; };
+		13F2394D2668BE7300EA427D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F2394C2668BE7300EA427D /* Assets.xcassets */; };
+		13F239502668BE7300EA427D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F2394F2668BE7300EA427D /* Preview Assets.xcassets */; };
+		13F2395B2668BE7300EA427D /* SlumDogMillionaireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2395A2668BE7300EA427D /* SlumDogMillionaireTests.swift */; };
+		13F239662668BE7300EA427D /* SlumDogMillionaireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F239652668BE7300EA427D /* SlumDogMillionaireUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13F239572668BE7300EA427D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13F2393D2668BE7100EA427D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13F239442668BE7100EA427D;
+			remoteInfo = SlumDogMillionaire;
+		};
+		13F239622668BE7300EA427D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13F2393D2668BE7100EA427D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13F239442668BE7100EA427D;
+			remoteInfo = SlumDogMillionaire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13F239452668BE7100EA427D /* SlumDogMillionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlumDogMillionaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F239482668BE7100EA427D /* SlumDogMillionaireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlumDogMillionaireApp.swift; sourceTree = "<group>"; };
+		13F2394A2668BE7100EA427D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		13F2394C2668BE7300EA427D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13F2394F2668BE7300EA427D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		13F239512668BE7300EA427D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13F239562668BE7300EA427D /* SlumDogMillionaireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlumDogMillionaireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F2395A2668BE7300EA427D /* SlumDogMillionaireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlumDogMillionaireTests.swift; sourceTree = "<group>"; };
+		13F2395C2668BE7300EA427D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13F239612668BE7300EA427D /* SlumDogMillionaireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlumDogMillionaireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13F239652668BE7300EA427D /* SlumDogMillionaireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlumDogMillionaireUITests.swift; sourceTree = "<group>"; };
+		13F239672668BE7300EA427D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13F239422668BE7100EA427D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F239532668BE7300EA427D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F2395E2668BE7300EA427D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13F2393C2668BE7100EA427D = {
+			isa = PBXGroup;
+			children = (
+				13F239472668BE7100EA427D /* SlumDogMillionaire */,
+				13F239592668BE7300EA427D /* SlumDogMillionaireTests */,
+				13F239642668BE7300EA427D /* SlumDogMillionaireUITests */,
+				13F239462668BE7100EA427D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13F239462668BE7100EA427D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13F239452668BE7100EA427D /* SlumDogMillionaire.app */,
+				13F239562668BE7300EA427D /* SlumDogMillionaireTests.xctest */,
+				13F239612668BE7300EA427D /* SlumDogMillionaireUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13F239472668BE7100EA427D /* SlumDogMillionaire */ = {
+			isa = PBXGroup;
+			children = (
+				13F239482668BE7100EA427D /* SlumDogMillionaireApp.swift */,
+				13F2394A2668BE7100EA427D /* ContentView.swift */,
+				13F2394C2668BE7300EA427D /* Assets.xcassets */,
+				13F239512668BE7300EA427D /* Info.plist */,
+				13F2394E2668BE7300EA427D /* Preview Content */,
+			);
+			path = SlumDogMillionaire;
+			sourceTree = "<group>";
+		};
+		13F2394E2668BE7300EA427D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				13F2394F2668BE7300EA427D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		13F239592668BE7300EA427D /* SlumDogMillionaireTests */ = {
+			isa = PBXGroup;
+			children = (
+				13F2395A2668BE7300EA427D /* SlumDogMillionaireTests.swift */,
+				13F2395C2668BE7300EA427D /* Info.plist */,
+			);
+			path = SlumDogMillionaireTests;
+			sourceTree = "<group>";
+		};
+		13F239642668BE7300EA427D /* SlumDogMillionaireUITests */ = {
+			isa = PBXGroup;
+			children = (
+				13F239652668BE7300EA427D /* SlumDogMillionaireUITests.swift */,
+				13F239672668BE7300EA427D /* Info.plist */,
+			);
+			path = SlumDogMillionaireUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13F239442668BE7100EA427D /* SlumDogMillionaire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13F2396A2668BE7300EA427D /* Build configuration list for PBXNativeTarget "SlumDogMillionaire" */;
+			buildPhases = (
+				13F239412668BE7100EA427D /* Sources */,
+				13F239422668BE7100EA427D /* Frameworks */,
+				13F239432668BE7100EA427D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlumDogMillionaire;
+			productName = SlumDogMillionaire;
+			productReference = 13F239452668BE7100EA427D /* SlumDogMillionaire.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13F239552668BE7300EA427D /* SlumDogMillionaireTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13F2396D2668BE7300EA427D /* Build configuration list for PBXNativeTarget "SlumDogMillionaireTests" */;
+			buildPhases = (
+				13F239522668BE7300EA427D /* Sources */,
+				13F239532668BE7300EA427D /* Frameworks */,
+				13F239542668BE7300EA427D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13F239582668BE7300EA427D /* PBXTargetDependency */,
+			);
+			name = SlumDogMillionaireTests;
+			productName = SlumDogMillionaireTests;
+			productReference = 13F239562668BE7300EA427D /* SlumDogMillionaireTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		13F239602668BE7300EA427D /* SlumDogMillionaireUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13F239702668BE7300EA427D /* Build configuration list for PBXNativeTarget "SlumDogMillionaireUITests" */;
+			buildPhases = (
+				13F2395D2668BE7300EA427D /* Sources */,
+				13F2395E2668BE7300EA427D /* Frameworks */,
+				13F2395F2668BE7300EA427D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13F239632668BE7300EA427D /* PBXTargetDependency */,
+			);
+			name = SlumDogMillionaireUITests;
+			productName = SlumDogMillionaireUITests;
+			productReference = 13F239612668BE7300EA427D /* SlumDogMillionaireUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13F2393D2668BE7100EA427D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					13F239442668BE7100EA427D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					13F239552668BE7300EA427D = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 13F239442668BE7100EA427D;
+					};
+					13F239602668BE7300EA427D = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 13F239442668BE7100EA427D;
+					};
+				};
+			};
+			buildConfigurationList = 13F239402668BE7100EA427D /* Build configuration list for PBXProject "SlumDogMillionaire" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 13F2393C2668BE7100EA427D;
+			productRefGroup = 13F239462668BE7100EA427D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13F239442668BE7100EA427D /* SlumDogMillionaire */,
+				13F239552668BE7300EA427D /* SlumDogMillionaireTests */,
+				13F239602668BE7300EA427D /* SlumDogMillionaireUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13F239432668BE7100EA427D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F239502668BE7300EA427D /* Preview Assets.xcassets in Resources */,
+				13F2394D2668BE7300EA427D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F239542668BE7300EA427D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F2395F2668BE7300EA427D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13F239412668BE7100EA427D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F2394B2668BE7100EA427D /* ContentView.swift in Sources */,
+				13F239492668BE7100EA427D /* SlumDogMillionaireApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F239522668BE7300EA427D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F2395B2668BE7300EA427D /* SlumDogMillionaireTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13F2395D2668BE7300EA427D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13F239662668BE7300EA427D /* SlumDogMillionaireUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13F239582668BE7300EA427D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13F239442668BE7100EA427D /* SlumDogMillionaire */;
+			targetProxy = 13F239572668BE7300EA427D /* PBXContainerItemProxy */;
+		};
+		13F239632668BE7300EA427D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13F239442668BE7100EA427D /* SlumDogMillionaire */;
+			targetProxy = 13F239622668BE7300EA427D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13F239682668BE7300EA427D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		13F239692668BE7300EA427D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13F2396B2668BE7300EA427D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SlumDogMillionaire/Preview Content\"";
+				DEVELOPMENT_TEAM = 2G53322G7J;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SlumDogMillionaire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyondo.SlumDogMillionaire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		13F2396C2668BE7300EA427D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SlumDogMillionaire/Preview Content\"";
+				DEVELOPMENT_TEAM = 2G53322G7J;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SlumDogMillionaire/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyondo.SlumDogMillionaire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13F2396E2668BE7300EA427D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2G53322G7J;
+				INFOPLIST_FILE = SlumDogMillionaireTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyondo.SlumDogMillionaireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlumDogMillionaire.app/SlumDogMillionaire";
+			};
+			name = Debug;
+		};
+		13F2396F2668BE7300EA427D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2G53322G7J;
+				INFOPLIST_FILE = SlumDogMillionaireTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyondo.SlumDogMillionaireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SlumDogMillionaire.app/SlumDogMillionaire";
+			};
+			name = Release;
+		};
+		13F239712668BE7300EA427D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2G53322G7J;
+				INFOPLIST_FILE = SlumDogMillionaireUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyondo.SlumDogMillionaireUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlumDogMillionaire;
+			};
+			name = Debug;
+		};
+		13F239722668BE7300EA427D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2G53322G7J;
+				INFOPLIST_FILE = SlumDogMillionaireUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyondo.SlumDogMillionaireUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SlumDogMillionaire;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13F239402668BE7100EA427D /* Build configuration list for PBXProject "SlumDogMillionaire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13F239682668BE7300EA427D /* Debug */,
+				13F239692668BE7300EA427D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13F2396A2668BE7300EA427D /* Build configuration list for PBXNativeTarget "SlumDogMillionaire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13F2396B2668BE7300EA427D /* Debug */,
+				13F2396C2668BE7300EA427D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13F2396D2668BE7300EA427D /* Build configuration list for PBXNativeTarget "SlumDogMillionaireTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13F2396E2668BE7300EA427D /* Debug */,
+				13F2396F2668BE7300EA427D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13F239702668BE7300EA427D /* Build configuration list for PBXNativeTarget "SlumDogMillionaireUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13F239712668BE7300EA427D /* Debug */,
+				13F239722668BE7300EA427D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13F2393D2668BE7100EA427D /* Project object */;
+}
