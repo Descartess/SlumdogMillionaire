@@ -6,28 +6,95 @@
 //
 
 import XCTest
+import ComposableArchitecture
+
 @testable import SlumDogMillionaire
 
 class SlumDogMillionaireTests: XCTestCase {
+    let scheduler = DispatchQueue.test
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    func testStartingGame() {
+        let scheduler = DispatchQueue.test
+        let store = TestStore(initialState: AppState(),
+                              reducer: appReducer,
+                              environment: AppEnvironment(loadQuestions: { _ in Effect(value: testQuestionBank)},
+                                                          bundle: Bundle(for: type(of: self)),
+                                                          mainQueue: scheduler.eraseToAnyScheduler()))
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+        store.send(.loadGame)
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+        scheduler.advance(by: 1)
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        store.receive(.startGame(.success(testQuestionBank))) {
+            $0.levelState = testInitialLevelState
         }
+
+        store.receive(.level(action: .timerTicked)) {
+            $0.levelState?.answerPeriod = 59
+        }
+
+        store.assert( .send(.endGame) {
+            $0.levelState = nil
+        })
     }
 
+    func testEndingGame() {
+        let store = TestStore(initialState: AppState(levelState: testInitialLevelState),
+                              reducer: appReducer,
+                              environment: AppEnvironment(loadQuestions: { _ in Effect(value: testQuestionBank)},
+                                                          bundle: Bundle(for: type(of: self)),
+                                                          mainQueue: self.scheduler.eraseToAnyScheduler()))
+
+        store.assert( .send(.endGame) {
+            $0.levelState = nil
+        })
+    }
+
+    func testAttemptCorrectAnswerToLevel() {
+        let store = TestStore(initialState: AppState(levelState: testInitialLevelState),
+                              reducer: appReducer,
+                              environment: AppEnvironment(loadQuestions: { _ in Effect(value: testQuestionBank)},
+                                                          bundle: Bundle(for: type(of: self)),
+                                                          mainQueue: self.scheduler.eraseToAnyScheduler()))
+
+        store.assert( .send(.level(action: .attempt(solution: 1))) {
+            $0.levelState?.levelPassed = true
+        })
+    }
+
+    func testAttemptWrongAnswerToLevel() {
+        let store = TestStore(initialState: AppState(levelState: testInitialLevelState),
+                              reducer: appReducer,
+                              environment: AppEnvironment(loadQuestions: { _ in Effect(value: testQuestionBank)},
+                                                          bundle: Bundle(for: type(of: self)),
+                                                          mainQueue: self.scheduler.eraseToAnyScheduler()))
+
+        store.assert( .send(.level(action: .attempt(solution: 2))) {
+            $0.levelState?.levelPassed = false
+        })
+    }
+
+    func testAdvanceToNextLevel() {
+        let scheduler = DispatchQueue.test
+        let store = TestStore(initialState: AppState(levelState: testInitialLevelState),
+                              reducer: appReducer,
+                              environment: AppEnvironment(loadQuestions: { _ in Effect(value: testQuestionBank)},
+                                                          bundle: Bundle(for: type(of: self)),
+                                                          mainQueue: scheduler.eraseToAnyScheduler()))
+        store.assert(.send(.level(action: .next)) {
+            $0.levelState?.levelPassed = nil
+            $0.levelState?.currentLevel = testLevels[1]
+            $0.levelState?.answerPeriod = 60
+        })
+
+        scheduler.advance(by: 1)
+
+        store.receive(.level(action: .timerTicked)) {
+            $0.levelState?.answerPeriod = 59
+        }
+
+        store.assert( .send(.endGame) {
+            $0.levelState = nil
+        })
+    }
 }

@@ -6,12 +6,20 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct SlumDogMillionaireApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(store: Store(initialState: AppState(),
+                                     reducer: appReducer,
+                                     environment: AppEnvironment(
+                                        loadQuestions: QuestionBank.load(from:),
+                                        mainQueue: .main
+                                     )
+                )
+            )
         }
     }
 }

@@ -1,0 +1,184 @@
+{
+  "questions": [
+    {
+      "level": 0,
+      "text": "What is the square root of 4?",
+      "answers": ["1", "2", "3", "4"],
+      "solution": 1
+    },
+    {
+      "level": 1,
+      "text": "Which river flows through the city of Berlin?",
+      "answers": ["Nette", "Oder", "Havel", "Briese"],
+      "solution": 2
+    },
+    {
+      "level": 2,
+      "text": "Which of these countries was sea charted in 1500 by the Portuguese maritime explorations?",
+      "answers": ["India", "Brazil", "Mozambique", "China"],
+      "solution": 1
+    },
+    {
+      "level": 3,
+      "text": "What is the world's most expensive spice by weight?",
+      "answers": ["Cinnamon", "Cardamom", "Vanilla", "Saffron"],
+      "solution": 3
+    },
+    {
+      "level": 4,
+      "text": "How many legs is it biologically impossible for a centipede to have?",
+      "answers": ["100", "26", "50", "76"],
+      "solution": 0
+    },
+    {
+      "level": 5,
+      "text": "What colour is the circle on the Japanese flag?",
+      "answers": ["Blue", "Peach", "Red", "Maroon"],
+      "solution": 2
+    },
+    {
+      "level": 6,
+      "text": "Kuala Lumpur is the capital of which country?",
+      "answers": ["Singapore", "Malayasia", "Indonesia", "Thailand"],
+      "solution": 1
+    },
+    {
+      "level": 7,
+      "text": "How old was Lyndon B. Johnson when he assumed the role of President of the United States?",
+      "answers": ["50", "60", "55", "54"],
+      "solution": 3
+    },
+    {
+      "level": 8,
+      "text": "Which moon is the only satellite in our solar system to possess a dense atmosphere?",
+      "answers": ["Europa", "Miranda", "Titan", "Callisto"],
+      "solution": 3
+    },
+    {
+      "level": 9,
+      "text": "What character was once considered to be the 27th letter of the alphabet?",
+      "answers": ["Ampersand", "Tilde", "Interrobang", "Pilcrow"],
+      "solution": 2
+    },
+    {
+      "level": 10,
+      "text": "Which small country is located between the borders of France and Spain?",
+      "answers": ["San Marino", "Andorra", "Vatican City", "Lichtenstein"],
+      "solution": 2
+    },
+    {
+      "level": 11,
+      "text": "Who won the 2018 Monaco Grand Prix?",
+      "answers": ["Lewis Hamilton", "Sebastian Vettel", "Kimi Raikkonen", "Daniel Ricciardo"],
+      "solution": 3
+    },
+    {
+      "level": 12,
+      "text": "Which river flows through the city of Berlin?",
+      "answers": ["Nette", "Oder", "Havel", "Briese"],
+      "solution": 2
+    },
+    {
+      "level": 13,
+      "text": "Which river flows through the city of Berlin?",
+      "answers": ["Nette", "Oder", "Havel", "Briese"],
+      "solution": 2
+    },
+    {
+      "level": 14,
+      "text": "Which river flows through the city of Berlin?",
+      "answers": ["Nette", "Oder", "Havel", "Briese"],
+      "solution": 2
+    },
+    {
+      "level": 0,
+      "text": "What year was Queen Elizabeth II born?",
+      "answers": ["1927", "1926", "1924", "1923"],
+      "solution": 1
+    },
+    {
+      "level": 1,
+      "text": "Which one of these paintings is not by Caspar David Friedrich?",
+      "answers": ["The Monk by the Sea","The Black Sea", "Wanderer above the Sea of Fog", "The Sea of Ice"],
+      "solution": 1
+    },
+    {
+      "level": 2,
+      "text": "Which river flows through the city of Berlin?",
+      "answers": ["Nette", "Oder", "Havel", "Briese"],
+      "solution": 2
+    },
+    {
+      "level": 3,
+      "text": "Which river flows through the city of Berlin?",
+      "answers": ["Nette", "Oder", "Havel", "Briese"],
+      "solution": 2
+    },
+    {
+      "level": 4,
+      "text": "Which river flows through the city of Berlin?",
+      "answers": ["Nette", "Oder", "Havel", "Briese"],
+      "solution": 2
+    },
+    {
+      "level": 5,
+      "text": "Which river flows through the city of Berlin?",
+      "answers": ["Nette", "Oder", "Havel", "Briese"],
+      "solution": 2
+    },
+    {
+      "level": 6,
+      "text": "In what year did Neil Armstrong and Buzz Aldrin land on the moon?",
+      "answers": ["1965", "1969", "1966", "1973"],
+      "solution": 2
+    },
+    {
+      "level": 7,
+      "text": "In Dota 2, Wraith King was previously known as...",
+      "answers": ["Skeleton King", "Reaper King", "Skull King", "Hell King"],
+      "solution": 0
+    },
+    {
+      "level": 8,
+      "text": "Which river flows through the city of Berlin?",
+      "answers": ["Nette", "Oder", "Havel", "Briese"],
+      "solution": 2
+    },
+    {
+      "level": 9,
+      "text": "What year did World War I begin?",
+      "answers": ["1913", "1914", "1915", "1916"],
+      "solution": 1
+    },
+    {
+      "level": 10,
+      "text": "Which river flows through the city of Berlin?",
+      "answers": ["Nette", "Oder", "Havel", "Briese"],
+      "solution": 2
+    },
+    {
+      "level": 11,
+      "text": "What year was O.J. Simpson aquitted of his murder charges?",
+      "answers": ["1992", "1995", "1996", "1991"],
+      "solution": 1
+    },
+    {
+      "level": 12,
+      "text": "Which Marvel superhero did Chris Evans play prior to his role as Captain America?",
+      "answers": ["Human Torch", "Cyclops", "Daredevil", "Iceman"],
+      "solution": 0
+    },
+    {
+      "level": 13,
+      "text": "What causes the sound of a heartbeat?",
+      "answers": ["Closure of the heart valves", "Contraction of the heart chambers", "Blood exiting the heart", "Relaxation of the heart chambers"],
+      "solution": 2
+    },
+    {
+      "level": 14,
+      "text": "What is the collective noun for vultures?",
+      "answers": ["Ambush", "Wake", "Building", "Choir"],
+      "solution": 2
+    }
+  ]
+}

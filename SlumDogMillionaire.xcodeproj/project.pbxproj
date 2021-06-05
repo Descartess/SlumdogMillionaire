@@ -3,16 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13DC4EB226690AE200DA62ED /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 13DC4EB126690AE200DA62ED /* questions.json */; };
+		13DC4EB626695EDB00DA62ED /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 13DC4EB126690AE200DA62ED /* questions.json */; };
+		13DC4EBC266A287000DA62ED /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC4EBB266A287000DA62ED /* View+Extensions.swift */; };
+		13DC4EC1266A3CAD00DA62ED /* LevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC4EC0266A3CAD00DA62ED /* LevelView.swift */; };
+		13DC4EC6266A3D5800DA62ED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC4EC5266A3D5800DA62ED /* HomeView.swift */; };
+		13DC4ECF266AA64C00DA62ED /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC4ECE266AA64C00DA62ED /* QuestionBank.swift */; };
+		13DC4ED7266AB10800DA62ED /* TestLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC4ED6266AB10700DA62ED /* TestLevels.swift */; };
 		13F239492668BE7100EA427D /* SlumDogMillionaireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F239482668BE7100EA427D /* SlumDogMillionaireApp.swift */; };
 		13F2394B2668BE7100EA427D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2394A2668BE7100EA427D /* ContentView.swift */; };
 		13F2394D2668BE7300EA427D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F2394C2668BE7300EA427D /* Assets.xcassets */; };
 		13F239502668BE7300EA427D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F2394F2668BE7300EA427D /* Preview Assets.xcassets */; };
 		13F2395B2668BE7300EA427D /* SlumDogMillionaireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2395A2668BE7300EA427D /* SlumDogMillionaireTests.swift */; };
 		13F239662668BE7300EA427D /* SlumDogMillionaireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F239652668BE7300EA427D /* SlumDogMillionaireUITests.swift */; };
+		13F239782668C07000EA427D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 13F239772668C07000EA427D /* ComposableArchitecture */; };
+		13F2397E2668C0AD00EA427D /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F2397D2668C0AD00EA427D /* Level.swift */; };
+		13F239862668C0BD00EA427D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F239852668C0BD00EA427D /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13DC4EB126690AE200DA62ED /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		13DC4EBB266A287000DA62ED /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		13DC4EC0266A3CAD00DA62ED /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
+		13DC4EC5266A3D5800DA62ED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		13DC4ECE266AA64C00DA62ED /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
+		13DC4ED6266AB10700DA62ED /* TestLevels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLevels.swift; sourceTree = "<group>"; };
 		13F239452668BE7100EA427D /* SlumDogMillionaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlumDogMillionaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F239482668BE7100EA427D /* SlumDogMillionaireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlumDogMillionaireApp.swift; sourceTree = "<group>"; };
 		13F2394A2668BE7100EA427D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +61,8 @@
 		13F239612668BE7300EA427D /* SlumDogMillionaireUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlumDogMillionaireUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F239652668BE7300EA427D /* SlumDogMillionaireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlumDogMillionaireUITests.swift; sourceTree = "<group>"; };
 		13F239672668BE7300EA427D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13F2397D2668C0AD00EA427D /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		13F239852668C0BD00EA427D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F239782668C07000EA427D /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,9 +91,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13DC4EBA266A285700DA62ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13DC4EBB266A287000DA62ED /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13DC4ECD266AA62300DA62ED /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				13DC4ECE266AA64C00DA62ED /* QuestionBank.swift */,
+				13DC4ED6266AB10700DA62ED /* TestLevels.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
 		13F2393C2668BE7100EA427D = {
 			isa = PBXGroup;
 			children = (
+				13DC4EB126690AE200DA62ED /* questions.json */,
 				13F239472668BE7100EA427D /* SlumDogMillionaire */,
 				13F239592668BE7300EA427D /* SlumDogMillionaireTests */,
 				13F239642668BE7300EA427D /* SlumDogMillionaireUITests */,
@@ -95,8 +132,12 @@
 		13F239472668BE7100EA427D /* SlumDogMillionaire */ = {
 			isa = PBXGroup;
 			children = (
+				13DC4EBA266A285700DA62ED /* Extensions */,
+				13F2397C2668C09700EA427D /* Models */,
 				13F239482668BE7100EA427D /* SlumDogMillionaireApp.swift */,
 				13F2394A2668BE7100EA427D /* ContentView.swift */,
+				13DC4EC0266A3CAD00DA62ED /* LevelView.swift */,
+				13DC4EC5266A3D5800DA62ED /* HomeView.swift */,
 				13F2394C2668BE7300EA427D /* Assets.xcassets */,
 				13F239512668BE7300EA427D /* Info.plist */,
 				13F2394E2668BE7300EA427D /* Preview Content */,
@@ -115,6 +156,7 @@
 		13F239592668BE7300EA427D /* SlumDogMillionaireTests */ = {
 			isa = PBXGroup;
 			children = (
+				13DC4ECD266AA62300DA62ED /* MockData */,
 				13F2395A2668BE7300EA427D /* SlumDogMillionaireTests.swift */,
 				13F2395C2668BE7300EA427D /* Info.plist */,
 			);
@@ -128,6 +170,15 @@
 				13F239672668BE7300EA427D /* Info.plist */,
 			);
 			path = SlumDogMillionaireUITests;
+			sourceTree = "<group>";
+		};
+		13F2397C2668C09700EA427D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				13F2397D2668C0AD00EA427D /* Level.swift */,
+				13F239852668C0BD00EA427D /* Question.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +197,9 @@
 			dependencies = (
 			);
 			name = SlumDogMillionaire;
+			packageProductDependencies = (
+				13F239772668C07000EA427D /* ComposableArchitecture */,
+			);
 			productName = SlumDogMillionaire;
 			productReference = 13F239452668BE7100EA427D /* SlumDogMillionaire.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +271,9 @@
 				Base,
 			);
 			mainGroup = 13F2393C2668BE7100EA427D;
+			packageReferences = (
+				13F239762668C07000EA427D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 13F239462668BE7100EA427D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13DC4EB226690AE200DA62ED /* questions.json in Resources */,
 				13F239502668BE7300EA427D /* Preview Assets.xcassets in Resources */,
 				13F2394D2668BE7300EA427D /* Assets.xcassets in Resources */,
 			);
@@ -242,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13DC4EB626695EDB00DA62ED /* questions.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +318,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13DC4EC1266A3CAD00DA62ED /* LevelView.swift in Sources */,
+				13DC4EC6266A3D5800DA62ED /* HomeView.swift in Sources */,
+				13F2397E2668C0AD00EA427D /* Level.swift in Sources */,
+				13F239862668C0BD00EA427D /* Question.swift in Sources */,
 				13F2394B2668BE7100EA427D /* ContentView.swift in Sources */,
+				13DC4EBC266A287000DA62ED /* View+Extensions.swift in Sources */,
 				13F239492668BE7100EA427D /* SlumDogMillionaireApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +333,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13F2395B2668BE7300EA427D /* SlumDogMillionaireTests.swift in Sources */,
+				13DC4ED7266AB10800DA62ED /* TestLevels.swift in Sources */,
+				13DC4ECF266AA64C00DA62ED /* QuestionBank.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +646,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		13F239762668C07000EA427D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		13F239772668C07000EA427D /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 13F239762668C07000EA427D /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 13F2393D2668BE7100EA427D /* Project object */;
 }
