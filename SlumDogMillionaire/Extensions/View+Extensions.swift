@@ -8,7 +8,15 @@
 import SwiftUI
 
 extension View {
-    @ViewBuilder func hidden(_ shouldHide: Bool) -> some View {
-        if shouldHide { hidden() } else { self }
+    func hidden(_ shouldHide: Bool) -> some View {
+        self.opacity(shouldHide ? 0 : 1)
+    }
+
+    @ViewBuilder func remove(_ shouldRemove: Bool) -> some View {
+        if shouldRemove {
+            EmptyView()
+        } else {
+            self
+        }
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13CAF908267CB09300BE5958 /* OpenTriviaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CAF907267CB09300BE5958 /* OpenTriviaResponse.swift */; };
 		13DC4EB226690AE200DA62ED /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 13DC4EB126690AE200DA62ED /* questions.json */; };
 		13DC4EB626695EDB00DA62ED /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 13DC4EB126690AE200DA62ED /* questions.json */; };
 		13DC4EBC266A287000DA62ED /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DC4EBB266A287000DA62ED /* View+Extensions.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13CAF907267CB09300BE5958 /* OpenTriviaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTriviaResponse.swift; sourceTree = "<group>"; };
 		13DC4EB126690AE200DA62ED /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
 		13DC4EBB266A287000DA62ED /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		13DC4EC0266A3CAD00DA62ED /* LevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			children = (
 				13F2397D2668C0AD00EA427D /* Level.swift */,
 				13F239852668C0BD00EA427D /* Question.swift */,
+				13CAF907267CB09300BE5958 /* OpenTriviaResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				13DC4EC1266A3CAD00DA62ED /* LevelView.swift in Sources */,
 				13DC4EC6266A3D5800DA62ED /* HomeView.swift in Sources */,
 				13F2397E2668C0AD00EA427D /* Level.swift in Sources */,
+				13CAF908267CB09300BE5958 /* OpenTriviaResponse.swift in Sources */,
 				13F239862668C0BD00EA427D /* Question.swift in Sources */,
 				13F2394B2668BE7100EA427D /* ContentView.swift in Sources */,
 				13DC4EBC266A287000DA62ED /* View+Extensions.swift in Sources */,
