@@ -15,7 +15,7 @@ struct SlumDogMillionaireApp: App {
             ContentView(store: Store(initialState: AppState(),
                                      reducer: appReducer,
                                      environment: AppEnvironment(
-                                        loadQuestions: QuestionBank.load(from:),
+                                        loadQuestions: OpenTriviaQuestionLoader().loadQuestionBank,
                                         mainQueue: .main
                                      )
                 )

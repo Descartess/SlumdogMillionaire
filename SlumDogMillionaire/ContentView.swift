@@ -16,7 +16,7 @@ enum AppAction: Equatable {
 }
 
 struct AppEnvironment {
-    var loadQuestions: (Bundle) -> Effect<QuestionBank, QuestionResponseError>
+    var loadQuestions: () -> Effect<QuestionBank, QuestionResponseError>
     var bundle = Bundle.main
     var mainQueue: AnySchedulerOf<DispatchQueue>
 }
@@ -24,12 +24,14 @@ struct AppEnvironment {
 struct AppState: Equatable {
     var gameLoadError = false
     var levelState: LevelState?
+    var isLoading = false
 }
 
 let appReducer = Reducer<AppState, AppAction, AppEnvironment>.combine( Reducer { state, action, environment in
     switch action {
         case let .startGame(.success(questions)):
             let gameLevels = Level.build(from: questions)
+            state.isLoading = false
             state.levelState = LevelState(currentLevel: gameLevels[0], levels: gameLevels)
             return Effect.timer(id: TimerId(),
                                 every: 1,
@@ -43,7 +45,8 @@ let appReducer = Reducer<AppState, AppAction, AppEnvironment>.combine( Reducer {
             state.levelState = nil
             return Effect.cancel(id: TimerId())
         case .loadGame:
-            return environment.loadQuestions(environment.bundle)
+            state.isLoading = true
+            return environment.loadQuestions()
                 .receive(on: environment.mainQueue)
                 .catchToEffect()
                 .map(AppAction.startGame)
@@ -77,7 +80,7 @@ struct ContentView_Previews: PreviewProvider {
             ContentView(store: Store(initialState: AppState(),
                                      reducer: appReducer,
                                      environment: AppEnvironment(
-                                        loadQuestions: QuestionBank.load(from:),
+                                        loadQuestions: Bundle.main.loadQuestionBank,
                                         mainQueue: .main
                                      )
                 )

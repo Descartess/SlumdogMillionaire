@@ -17,7 +17,14 @@ struct HomeView: View {
                 Text("Slumdog Millionaire")
                     .font(.title)
                     .padding()
-                Button("Start Game") { viewStore.send(.loadGame) }
+                Button("Start Game") {
+                    withAnimation {
+                        viewStore.send(.loadGame)
+                    }
+                }.disabled(viewStore.isLoading)
+                ProgressView()
+                    .transition(AnyTransition.scale(scale: 10)) //.move(edge: .bottom))
+                    .hidden(!viewStore.isLoading)
             }
         }
     }

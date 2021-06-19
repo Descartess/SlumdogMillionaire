@@ -15,7 +15,9 @@ struct Question: Decodable, Equatable {
     let solution: Int
 }
 
-struct QuestionResponseError: Equatable, Error {}
+struct QuestionResponseError: Equatable, Error {
+    let description: String
+}
 
 struct QuestionResponse: Decodable {
     let questions: QuestionBank
@@ -38,7 +40,7 @@ extension QuestionBank {
             let questionBank = try decoder.decode(QuestionResponse.self, from: data)
             return   Effect(value: questionBank.questions)
         } catch {
-            return Effect(error: QuestionResponseError())
+            return Effect(error: QuestionResponseError(description: "Decoding failed"))
         }
     }
 
@@ -51,3 +53,48 @@ extension QuestionBank {
         return question
     }
 }
+
+
+protocol QuestionLoader {
+    func loadQuestionBank() -> Effect<QuestionBank, QuestionResponseError>
+}
+
+
+extension Bundle: QuestionLoader {
+    func loadQuestionBank() -> Effect<QuestionBank, QuestionResponseError> {
+        let decoder = JSONDecoder()
+
+        guard
+            let url = self.url(forResource: "questions", withExtension: "json")
+        else {
+            preconditionFailure("Question path must exist")
+        }
+
+        do {
+            let data = try Data(contentsOf: url)
+            let questionBank = try decoder.decode(QuestionResponse.self, from: data)
+            return   Effect(value: questionBank.questions)
+        } catch {
+            return Effect(error: QuestionResponseError(description: "Decoding failed"))
+        }
+    }
+}
+
+struct OpenTriviaQuestionLoader: QuestionLoader {
+    func loadQuestionBank() -> Effect<QuestionBank, QuestionResponseError> {
+        let jsonDecoder = JSONDecoder()
+        guard
+            let url = URL(string: "https://opentdb.com/api.php?amount=15&type=multiple")
+        else {
+            preconditionFailure("URL must not be nil")
+        }
+
+        return URLSession.shared.dataTaskPublisher(for: url)
+                .map { data, _ in data }
+                .decode(type: OpenTriviaResponse.self, decoder: jsonDecoder)
+                .mapError { QuestionResponseError(description: "Network error: \($0)") }
+                .map({ $0.transform()})
+                .eraseToEffect()
+    }
+}
+

@@ -81,13 +81,13 @@ class SlumDogMillionaireTests: XCTestCase {
                               environment: AppEnvironment(loadQuestions: { _ in Effect(value: testQuestionBank)},
                                                           bundle: Bundle(for: type(of: self)),
                                                           mainQueue: scheduler.eraseToAnyScheduler()))
-        store.assert(.send(.level(action: .next)) {
+        store.send(.level(action: .next)) {
             $0.levelState?.levelPassed = nil
             $0.levelState?.currentLevel = testLevels[1]
             $0.levelState?.answerPeriod = 60
-        })
+        }
 
-        scheduler.advance(by: 1)
+        scheduler.advance(by: 2)
 
         store.receive(.level(action: .timerTicked)) {
             $0.levelState?.answerPeriod = 59
